@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Wiley Grant Web App</title>
+</head>
+<body>
+  <header>
+    <h6></h6>
+    <img class="logo_image" src="logo.png" alt="Logo" width="150px" height="40px">
+  </header>
+  <main>
+    <h6></h6>
+    <button id="create-new-item-btn">Create New Application</button>
+    <section hidden id="creation-section">
+      <br>
+      <section id="get-user-data">
+        <label>Applicant Contact Information</label>
+        <br><br>
+        <label>First Name:</label>
+        <input type="text" id="first-name-input">
+        <br>
+        <label>Last Name:</label>
+        <input type="text" id="last-name-input">
+        <br>
+        <label>Email:</label>
+        <input type="text" id="email-input">
+        <br>
+        <label>Phone:</label>
+        <input type="text" id="phone-input">
+        <br><br>
+        <button id="to-app-data-btn">Next</button>
+        <br>
+      </section>
+      <section hidden id="get-app-data">
+        <label>Application Details</label>
+        <br><br>
+        <label>Summary:</label>
+        <input type="text" id="summary-input">
+        <br>
+        <label>Description:</label>
+        <input type="text" id="description-input">
+        <br>
+        <label>Department:</label>
+        <input type="text" id="department-input">
+        <br>
+        <label>Sponsor:</label>
+        <input type="text" id="sponsor-input">
+        <br><br>
+        <button id="to-budget-data-btn">Next</button>
+        <br>
+      </section>
+      <section hidden id="get-budget-data">
+        <label>Budget Details</label>
+        <br><br>
+        <label>Budget Amount:</label>
+        <input type="text" id="budget-amt-input">
+        <br>
+        <label>Date Needed By:</label>
+        <input type="text" id="budget-due-input">
+        <br>
+        <label>Budget Use Description:</label>
+        <input type="text" id="budget-use-input">
+        <br><br>
+        <button id="add-app-btn">Submit Application</button>
+        <br>
+      </section>
+    </section>
+    
+    <br><br><br>
+
+    <div>
+      <form>
+        <label>Search by </label>
+        <select id="search-type">
+          <option value="user_id">User ID</option>
+          <option value="app_status_id">Status</option>
+          <option value="app_id">Application ID</option>
+        </select>
+        <input placeholder = "data value" id = "search-input">
+        <button id="search-btn">Search</button>
+      </form>
+    </div>
+
+    <table id="table">
+        <thead>
+          <th>Application ID</th>
+          <th>User ID</th>
+          <th>Date Submitted</th>
+          <th>Status</th>
+          <th>Summary</th>
+          <th>Description</th>
+          <th>Department</th>
+          <th>Sponsor</th>
+          <th>Budget</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <section hidden id="update-row">
+      <label id="selected-name"></label>
+      <br><br>
+      <label>Select application field to edit: </label>
+      <select id="edit-field">
+        <option value="contact-info">Contact Info</option>
+        <option value="app-details">Application Details</option>
+        <option value="budget-details">Budget Details</option>
+      </select>
+      <br><br>
+      <section id="update-app-data">
+        <label>Summary:</label>
+        <input type="text" id="update-summary">
+        <br>
+        <label>Description:</label>
+        <input type="text" id="update-description">
+        <br>
+        <label>Department:</label>
+        <input type="text" id="update-department">
+        <br>
+        <label>Sponsor:</label>
+        <input type="text" id="update-sponsor">
+        <br>
+      </section>
+      <br>
+      <button id="update-row-btn">Update</button>
+    </section>
+
+    <br><br><br><br>
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
