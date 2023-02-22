@@ -55,7 +55,7 @@ CREATE TABLE `apps` (
   CONSTRAINT `fk_apps_app_status_id_idx` FOREIGN KEY (`app_status_id`) REFERENCES `app_statuses` (`app_status_id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 INSERT INTO `apps` VALUES (1,2,1,'2022-11-14',1,'Test Submission',NULL,'Computer Science',NULL,NULL);
-INSERT INTO `apps` VALUES (2,1,1,'2022-11-14',2,'Wiley Mini Grant Project','A full stack web app for grant application and management','Computer Science','Alec Engebretson',NULL);
+INSERT INTO `apps` VALUES (2,1,1,'2022-11-14',2,'Wiley Mini Grant Project','A full stack web app for grant application and management','Computer Science','Professor Johnson',NULL);
 
 
 CREATE TABLE `wiley`.`app_notes` (
