@@ -13,8 +13,8 @@ CREATE TABLE `users` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO `users` VALUES (1,'Tessa','Brazda','402-326-6623','tessa.brazda@doane.edu');
-INSERT INTO `users` VALUES (2,'John','Smith', null,'john.smith@doane.edu');
+INSERT INTO `users` VALUES (1,'John','Smith', '555-555-5555','john.smith@doane.edu');
+INSERT INTO `users` VALUES (2,'First Name','Last Name', '555-555-5555','test.user@doane.edu');
 
 
 CREATE TABLE `app_statuses` (
